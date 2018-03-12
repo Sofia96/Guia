@@ -3,40 +3,116 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - Taller de Billy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Carter+One">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link href="~/Content/MyStyleSheet.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/Content/Article-List.css">
+    <link rel="stylesheet" href="~/Content/Blog-Recent-posts-list.css">
+    <link rel="stylesheet" href="~/Content/Blog-Recent-posts-list1.css">
+    <link rel="stylesheet" href="~/Content/Contact-Form-Clean.css">
+    <link rel="stylesheet" href="~/Content/Footer-Dark.css">
+    <link rel="stylesheet" href="~/Content/Header-Dark.css">
+    <link rel="stylesheet" href="~/Content/MUSA_carousel-product-cart-slider.css">
+    <link rel="stylesheet" href="~/Content/MUSA_carousel-product-cart-slider1.css">
+    <link rel="stylesheet" href="~/Content/Service-Box-Style-01.css">
+    <link rel="stylesheet" href="~/Content/Services.css">
+    <link rel="stylesheet" href="~/Content/styles.css">
+
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-                @Html.Partial("_LoginPartial")
-            </div>
+
+    <div>
+        <div class="header-dark">
+            <nav class="navbar navbar-default navigation-clean-search">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand navbar-link" href="#" style="font-family:Bitter, serif;font-size:30px;">Taller Billy</a>
+                        <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navcol-1">
+                        <ul class="nav navbar-nav">
+                            <li role="presentation"><a href="#">¿Quienes somos? </a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Servicios <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li role="presentation"><a href="#">First Item</a></li>
+                                    <li role="presentation"><a href="#">Second Item</a></li>
+                                    <li role="presentation"><a href="#">Third Item</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Especialidades <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li role="presentation"><a href="#">First Item</a></li>
+                                    <li role="presentation"><a href="#">Second Item</a></li>
+                                    <li role="presentation"><a href="#">Third Item</a></li>
+                                </ul>
+                            </li>
+                            <li role="presentation"><a href="#">Galería </a></li>
+                            <li role="presentation"><a href="#">Videoblog </a></li>
+                            <li role="presentation"><a href="#">Contacto </a></li>
+                        </ul>
+                        <p class="navbar-text navbar-right"><a class="navbar-link login" href="#">Ingresar </a> <a class="btn btn-default action-button" role="button" href="#">Quiero registrarme</a></p>
+                    </div>
+                </div>
+            </nav>
+
         </div>
-    </div>
-    <div class="container body-content">
+    </div><!--All the contend-->
+
+    <div class="container">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
     </div>
 
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-push-6 item text">
+                        <h3>Taller Billy</h3>
+                        <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+                    </div>
+                    <div class="col-md-3 col-md-pull-6 col-sm-4 item">
+                        <h3>Servicios </h3>
+                        <ul>
+                            <li><a href="#">Diagnóstico </a></li>
+                            <li><a href="#">Mantenimiento </a></li>
+                            <li><a href="#">Mecánica Rápida</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-md-pull-6 col-sm-4 item">
+                        <h3>Especialidades </h3>
+                        <ul>
+                            <li><a href="#">Alineamiento y tramado</a></li>
+                            <li><a href="#">Frenos </a></li>
+                            <li><a href="#">Suspesnión y dirección</a></li>
+                            <li><a href="#">Llantas y balanceo </a></li>
+                            <li> <a href="#">Afinamiento </a></li>
+                            <li><a href="#">Fallas de motor </a></li>
+                            <li><a href="#">Aire Acondicionado </a></li>
+                            <li><a href="#">Reparación y reconstrucción </a></li>
+                            <li><a href="#">Revisión Técnica Vehicular </a></li>
+                            <li> <a href="#">Electromecánica </a></li>
+                            <li><a href="#">Escaneo Digital </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12 col-sm-4 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+                </div>
+                <p class="copyright">Taller Billy S.A. © @DateTime.Now.Year</p>
+            </div>
+        </footer>
+    </div><!--Footer-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
