@@ -1,4 +1,10 @@
 ﻿body {
-    background-image: url('../Img/background/bg05.jpg');
+    background-image: url('../Img/background/bg04.jpg');
     background-size: cover;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
