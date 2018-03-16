@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Taller de Billy</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
@@ -21,12 +23,11 @@
     <link rel="stylesheet" href="~/Content/Service-Box-Style-01.css">
     <link rel="stylesheet" href="~/Content/Services.css">
     <link rel="stylesheet" href="~/Content/styles.css?t=1520925287536">
-    <link rel="stylesheet" href="~/Content/MyStyleSheet.css?t=1520925287536"/>
+    <link rel="stylesheet" href="~/Content/MyStyleSheet.css?t=1521211194211" />
 
 </head>
-<body>
-    
-       <div>
+<body>    
+    <div>
         <div class="header-dark">
             <nav class="navbar navbar-default navigation-clean-search">
                 <div class="container-fluid">
@@ -36,35 +37,19 @@
                     </div>
                     <div class="collapse navbar-collapse" id="navcol-1">
                         <ul class="nav navbar-nav">
-                            <li role="presentation"><a href="#">¿Quienes somos? </a></li>
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Servicios <span class="caret"></span></a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li role="presentation"><a href="#">First Item</a></li>
-                                    <li role="presentation"><a href="#">Second Item</a></li>
-                                    <li role="presentation"><a href="#">Third Item</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Especialidades <span class="caret"></span></a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li role="presentation"><a href="#">First Item</a></li>
-                                    <li role="presentation"><a href="#">Second Item</a></li>
-                                    <li role="presentation"><a href="#">Third Item</a></li>
-                                </ul>
-                            </li>
-                            <li role="presentation"><a href="#">Galería </a></li>
-                            <li role="presentation"><a href="#">Videoblog </a></li>
-                            <li role="presentation"><a href="#">Contacto </a></li>
+                            <li><a href="#ServicesArticle">Servicios</a></li>
+                            <li><a href="#SpecialtiesArticle">Especialidades</a></li>
+                            <li><a href="#SpecialtiesArticle">Galería</a></li>
+                            <li><a href="#BlogArticle">Videoblog</a></li>
+                            <li><a href="#WhoWeAreArticle">¿Quienes somos? </a></li>
+                            <li><a href="#ContactArticle">Contacto</a></li>
                         </ul>
                         <p class="navbar-text navbar-right"><a class="navbar-link login" href="#">Ingresar </a> <a class="btn btn-default action-button" role="button" href="#">Quiero registrarme</a></p>
                     </div>
                 </div>
             </nav>
         </div>
-    </div>
-
-
+    </div><!--Navbar-->
 
     <div class="container">
         @RenderBody()
@@ -109,10 +94,10 @@
         </footer>
     </div><!--Footer-->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
