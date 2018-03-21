@@ -253,3 +253,13 @@ bsi24tallerbilly/packages/EntityFramework.6.1.3/content/Web.config.transform
 bsi24tallerbilly/packages/EntityFramework.6.1.3/content/App.config.transform
 bsi24tallerbilly/packages/EntityFramework.6.1.3/EntityFramework.6.1.3.nupkg
 bsi24tallerbilly/packages/Antlr.3.4.1.9004/Antlr.3.4.1.9004.nupkg
+bsi24tallerbilly/packages/bootstrap.3.0.0/Content/Content/bootstrap-theme.min.css
+bsi24tallerbilly/packages/bootstrap.3.0.0/Content/Content/bootstrap-theme.css
+bsi24tallerbilly/packages/WebGrease.1.5.2/tools/uninstall.ps1
+bsi24tallerbilly/packages/WebGrease.1.5.2/tools/install.ps1
+bsi24tallerbilly/packages/Newtonsoft.Json.6.0.4/lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.xml
+bsi24tallerbilly/packages/Newtonsoft.Json.6.0.4/lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.xml
+bsi24tallerbilly/.vs/bsi24tallerbilly/v15/Server/sqlite3/storage.ide-wal
+bsi24tallerbilly/.vs/bsi24tallerbilly/v15/Server/sqlite3/storage.ide-shm
+bsi24tallerbilly/.vs/bsi24tallerbilly/v15/Server/sqlite3/storage.ide
+bsi24tallerbilly/.vs/bsi24tallerbilly/v15/Server/sqlite3/db.lock

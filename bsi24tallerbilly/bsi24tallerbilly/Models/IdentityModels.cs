@@ -11,7 +11,7 @@ namespace bsi24tallerbilly.Models
     {
 
         public int CostarricanIDNumber { get; set; }
-        public string FullNumber { get; set; }
+        public string FullName { get; set; }
 
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
         {
@@ -25,7 +25,7 @@ namespace bsi24tallerbilly.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+            : base("LocalConnection", throwIfV1Schema: false)
         {
         }
 
