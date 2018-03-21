@@ -1,4 +1,4 @@
-<a href="http://billyworkshop.gearhostpreview.com">Preview</a>
+<a href="http://billyworkshopcr.gear.host/">Preview</a>
 
 
 # Taller de Billy
