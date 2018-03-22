@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BillyWorkshopModelStoreContainer" CdmEntityContainer="BillyWorkshopEntities1">
+    <EntitySetMapping Name="Blog">
+      <EntityTypeMapping TypeName="BillyWorkshopModel.Blog">
+        <MappingFragment StoreEntitySet="Blog">
+          <ScalarProperty Name="idComment" ColumnName="idComment" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="FechaHora" ColumnName="FechaHora" />
+          <ScalarProperty Name="Tema" ColumnName="Tema" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
