@@ -26,7 +26,7 @@ namespace bsi24tallerbilly.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("LocalConnection", throwIfV1Schema: false)
+            : base("CloudConnection", throwIfV1Schema: false)
         {
         }
 

@@ -250,6 +250,8 @@
     </Content>
     <None Include="Properties\PublishProfiles\billyworkshopcr - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\billyworkshopcr - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\bsi-24billyworkshop - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\bsi-24billyworkshop - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\CustomNabVar.js" />
     <Content Include="Scripts\GoogleMaps.js" />
