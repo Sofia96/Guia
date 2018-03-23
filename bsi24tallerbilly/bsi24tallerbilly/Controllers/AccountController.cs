@@ -12,6 +12,8 @@ using bsi24tallerbilly.Models;
 
 namespace bsi24tallerbilly.Controllers
 {
+    //TEST
+
     [Authorize]
     public class AccountController : Controller
     {
