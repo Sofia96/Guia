@@ -31,7 +31,7 @@ namespace bsi24tallerbilly.Migrations
                 manager.Create(user, "g@u^E%a#S?&1");
             }
 
-            if(!context.WorkshopServices.Any(w => w.WorkshopServicesID == 1))
+            if (!context.WorkshopServices.Any(w => w.WorkshopServicesID == 1))
             {
                 context.WorkshopServices.Add
                 (

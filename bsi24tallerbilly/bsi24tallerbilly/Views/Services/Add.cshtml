@@ -1,0 +1,39 @@
+﻿@model bsi24tallerbilly.Models.WorkShopServicesViewModel
+@{
+    ViewBag.Title = "Servicios";
+}
+
+<div class="col-lg-12 text-center" style="padding-bottom:22px">
+    <h2 class="section-heading">@ViewBag.Title</h2>
+</div>
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-12">
+
+            @using (Html.BeginForm("Add", "Services", FormMethod.Post))
+            {
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.WorkshopServicesID)
+                    @Html.TextBoxFor(model => model.WorkshopServicesID)
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.ImageURL)
+                    @Html.TextBoxFor(model => model.ImageURL)
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Title)
+                    @Html.TextBoxFor(model => model.Title)
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Description)
+                    @Html.TextBoxFor(model => model.Description)
+                </div>
+                <button type="submit" class="btn btn-default">Agregar</button>
+            }
+        </div>
+    </div>
+</div>

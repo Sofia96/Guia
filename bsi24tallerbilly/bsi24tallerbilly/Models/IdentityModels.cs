@@ -28,6 +28,8 @@ namespace bsi24tallerbilly.Models
         public ApplicationDbContext()
             : base("CloudConnection", throwIfV1Schema: false)
         {
+            this.Configuration.ProxyCreationEnabled = true;
+            this.Configuration.LazyLoadingEnabled = true;
         }
 
         //Add all entities like this
