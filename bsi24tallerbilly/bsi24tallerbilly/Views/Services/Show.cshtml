@@ -1,4 +1,5 @@
-﻿@{
+﻿@model bsi24tallerbilly.Models.WorkShopServicesList
+@{
     ViewBag.Title = "Servicios";
 }
 
@@ -11,115 +12,28 @@
     <div class="row">
         <div class="col-md-12">
 
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <img src="http://placehold.it/424x400" alt="Hola">
-                    <div class="caption text-center">
-                        <h3>Alineamiento y tramado</h3>
-                        <p>Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p>
-                    </div>
-                </div>
-            </div>
 
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <img src="http://placehold.it/424x400" alt="Hola">
-                    <div class="caption text-center">
-                        <h3>Revision y control de Frenos</h3>
-                        <p>Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p>
-                    </div>
-                </div>
-            </div>
 
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <img src="http://placehold.it/424x400" alt="Hola">
-                    <div class="caption text-center">
-                        <h3>Suspesnión y dirección</h3>
-                        <p>Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p>
-                    </div>
-                </div>
-            </div>
+            @foreach (var WorkshopService in Model.ListOfServices)
+            {
+                string URL = "http://placehold.it/424x400";
+                if (WorkshopService.ImageURL != null)
+                {
+                    URL = WorkshopService.ImageURL;
+                }
 
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <img src="http://placehold.it/424x400" alt="Hola">
-                    <div class="caption text-center">
-                        <h3>Llantas y balanceo</h3>
-                        <p>Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="@URL" alt="Hola">
+                        <div class="caption text-center">
+                            <h3>@WorkshopService.Title</h3>
+                            <p>@WorkshopService.Description</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <img src="http://placehold.it/424x400" alt="Hola">
-                    <div class="caption text-center">
-                        <h3>Afinamiento</h3>
-                        <p>Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p>
-                    </div>
-                </div>
-            </div>
+            }
 
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <img src="http://placehold.it/424x400" alt="Hola">
-                    <div class="caption text-center">
-                        <h3>Fallas de motor</h3>
-                        <p>Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <img src="http://placehold.it/424x400" alt="Hola">
-                    <div class="caption text-center">
-                        <h3>Aire Acondicionado</h3>
-                        <p>Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <img src="http://placehold.it/424x400" alt="Hola">
-                    <div class="caption text-center">
-                        <h3>Reparación y reconstrucción</h3>
-                        <p>Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <img src="http://placehold.it/424x400" alt="Hola">
-                    <div class="caption text-center">
-                        <h3>Revisión Técnica Vehicular</h3>
-                        <p>Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <img src="http://placehold.it/424x400" alt="Hola">
-                    <div class="caption text-center">
-                        <h3>Electromecánica</h3>
-                        <p>Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <img src="http://placehold.it/424x400" alt="Hola">
-                    <div class="caption text-center">
-                        <h3>Escaneo Digital</h3>
-                        <p>Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 
