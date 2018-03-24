@@ -1,4 +1,4 @@
-﻿@model bsi24tallerbilly.Models.WorkShopServicesList
+﻿@model bsi24tallerbilly.Models.WorkshopServicesViewModel.WorkshopServicesListViewModel
 @{
     ViewBag.Title = "Servicios";
 }
@@ -24,7 +24,7 @@
 
                 <div class="col-md-4">
                     <div class="thumbnail">
-                        <img src="@URL" alt="Hola">
+                        <img src="@URL" alt="Hola" height="400" width="424">
                         <div class="caption text-center">
                             <h3>@WorkshopService.Title</h3>
                             <p>@WorkshopService.Description</p>

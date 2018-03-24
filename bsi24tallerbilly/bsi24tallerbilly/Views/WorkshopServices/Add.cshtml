@@ -1,0 +1,54 @@
+﻿@model bsi24tallerbilly.Models.WorkshopServicesViewModel.AddWorkshopServiceViewModel
+@{
+    ViewBag.Title = "Servicios";
+}
+
+<div class="col-lg-12 text-center" style="padding-bottom:22px">
+    <h2 class="section-heading">@ViewBag.Title</h2>
+</div>
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-md-12 text-center">
+
+            <div class="form-horizontal">
+                @using (Html.BeginForm())
+                {
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                    <div class="form-group" style="display:none">
+                        @Html.LabelFor(model => model.WorkshopServicesID, new { @Class = "col-sm-2 control-label" })
+                        <div class="col-sm-10">
+                            @Html.TextBoxFor(model => model.WorkshopServicesID, new { @Placeholder = "", @Class = "form-control" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Title, new { @Class = "col-sm-2 control-label" })
+                        <div class="col-sm-10">
+                            @Html.TextBoxFor(model => model.Title, new { @Placeholder = "", @Class = "form-control" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.ImageURL, new { @Class = "col-sm-2 control-label" })
+                        <div class="col-sm-10">
+                            @Html.TextBoxFor(model => model.ImageURL, new { @Placeholder = "", @Class = "form-control" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Description, new { @Class = "col-sm-2 control-label" })
+                        <div class="col-sm-10">
+                            @Html.TextAreaFor(model => model.Description, new { @Placeholder = "", @Class = "form-control" })
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Agregar</button>
+                }
+            </div>
+        </div>
+    </div>
+</div>

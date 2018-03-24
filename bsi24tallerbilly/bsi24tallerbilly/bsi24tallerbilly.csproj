@@ -193,17 +193,22 @@
     <Compile Include="Controllers\ContactUsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Controllers\ServicesController.cs" />
+    <Compile Include="Controllers\WorkshopServicesController.cs" />
     <Compile Include="Data\Entities\WorkshopServices.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803240449215_Remove state.cs" />
+    <Compile Include="Migrations\201803240449215_Remove state.Designer.cs">
+      <DependentUpon>201803240449215_Remove state.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ContactUsViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="Models\ServicesViewModels.cs" />
+    <Compile Include="Models\WorkshopServicesViewModel\AddWorkshopServiceViewModel.cs" />
+    <Compile Include="Models\WorkshopServicesViewModel\WorkshopServicesListViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\IMainRepository.cs" />
     <Compile Include="Repositories\WorkshopServicesRepository.cs" />
@@ -268,7 +273,9 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -302,9 +309,9 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Services\Add.cshtml" />
-    <Content Include="Views\Services\List.cshtml" />
-    <Content Include="Views\Services\Show.cshtml" />
+    <Content Include="Views\WorkshopServices\Add.cshtml" />
+    <Content Include="Views\WorkshopServices\List.cshtml" />
+    <Content Include="Views\WorkshopServices\Show.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -321,6 +328,11 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201803240449215_Remove state.resx">
+      <DependentUpon>201803240449215_Remove state.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

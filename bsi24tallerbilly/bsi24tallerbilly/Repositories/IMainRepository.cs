@@ -1,4 +1,5 @@
 ﻿using bsi24tallerbilly.Models;
+using bsi24tallerbilly.Models.WorkshopServicesViewModel;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -11,8 +12,8 @@ namespace bsi24tallerbilly.Repositories
     public interface IMainRepository
     {
         List<TTypes> List<TTypes>();
-        void Add(WorkShopServicesViewModel model);
-        void Update(WorkShopServicesViewModel model);
+        void Add(AddWorkshopServiceViewModel model);
+        void Update(AddWorkshopServiceViewModel model);
         void Delete(int ID);
     }
 }

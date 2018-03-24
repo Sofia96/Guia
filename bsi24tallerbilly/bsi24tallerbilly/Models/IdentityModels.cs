@@ -26,10 +26,9 @@ namespace bsi24tallerbilly.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("CloudConnection", throwIfV1Schema: false)
+            : base("LocalConnection", throwIfV1Schema: false)
         {
-            this.Configuration.ProxyCreationEnabled = true;
-            this.Configuration.LazyLoadingEnabled = true;
+            
         }
 
         //Add all entities like this

@@ -2,6 +2,7 @@
 using bsi24tallerbilly.Data.Entities;
 using System.Linq;
 using System.Collections.Generic;
+using bsi24tallerbilly.Models.WorkshopServicesViewModel;
 
 namespace bsi24tallerbilly.Repositories
 {
@@ -14,7 +15,20 @@ namespace bsi24tallerbilly.Repositories
             return db.WorkshopServices.ToList();
         }
 
-        public void Add(WorkShopServicesViewModel model)
+        public AddWorkshopServiceViewModel GetByID (int id)
+        {
+            WorkshopServices CurrentService = db.WorkshopServices.SingleOrDefault(x => x.WorkshopServicesID == id);
+            AddWorkshopServiceViewModel NewModel = new AddWorkshopServiceViewModel()
+            {
+                WorkshopServicesID = CurrentService.WorkshopServicesID,
+                Title = CurrentService.Title,
+                ImageURL = CurrentService.ImageURL,
+                Description = CurrentService.Description
+            };
+            return NewModel;
+        }
+
+        public void Add(AddWorkshopServiceViewModel model)
         {
             WorkshopServices NewService = new WorkshopServices()
             {
@@ -27,7 +41,7 @@ namespace bsi24tallerbilly.Repositories
             db.SaveChanges();
         }
 
-        public void Update(WorkShopServicesViewModel model)
+        public void Update(AddWorkshopServiceViewModel model)
         {
             WorkshopServices CurrentService = db.WorkshopServices.SingleOrDefault(x => x.WorkshopServicesID == model.WorkshopServicesID);
             CurrentService.ImageURL = model.ImageURL;

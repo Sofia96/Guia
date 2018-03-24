@@ -1,15 +1,14 @@
-﻿using bsi24tallerbilly.Data.Entities;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Web;
 
-namespace bsi24tallerbilly.Models
+namespace bsi24tallerbilly.Models.WorkshopServicesViewModel
 {
-    public class WorkShopServicesViewModel
+    public class AddWorkshopServiceViewModel
     {
+        [Key]
         public int WorkshopServicesID { get; set; }
         [Display(Name = "Url Imagen")]
         public string ImageURL { get; set; }
@@ -20,10 +19,4 @@ namespace bsi24tallerbilly.Models
         [Display(Name = "Descripcion")]
         public string Description { get; set; }
     }
-
-    public class WorkShopServicesList
-    {
-        public List<WorkshopServices> ListOfServices { get; set; }
-    }
-
 }

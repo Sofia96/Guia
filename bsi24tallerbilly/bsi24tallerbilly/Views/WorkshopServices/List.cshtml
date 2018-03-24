@@ -1,0 +1,40 @@
+﻿@model bsi24tallerbilly.Models.WorkshopServicesViewModel.WorkshopServicesListViewModel
+@{
+    ViewBag.Title = "Servicios";
+}
+
+<div class="col-lg-12 text-center" style="padding-bottom:22px">
+    <h2 class="section-heading">@ViewBag.Title</h2>
+</div>
+
+<div class="container">
+
+    <div class="row">
+        
+        <div class="col-md-12">
+            <h3>@Html.ActionLink("Agregar Nuevo servicio", "Add", "WorkshopServices")</h3>
+        </div>
+        
+        <div class="col-md-12">
+
+            <table class="table">
+                <tr>
+                    <th>Titulo</th>
+                    <th>URL</th>
+                    <th>Descripcion</th>
+                    <th>Borrar</th>
+                </tr>
+                @foreach (var WorkshopServices in Model.ListOfServices)
+                {
+                    <tr>
+                        <td>@Html.ActionLink(WorkshopServices.Title,"Update","WorkshopServices", new { id=WorkshopServices.WorkshopServicesID}, null)</td>
+                        <td>@WorkshopServices.ImageURL</td>
+                        <td>@WorkshopServices.Description</td>
+                        <td>@Html.ActionLink("X","Delete","WorkshopServices", new { id = WorkshopServices.WorkshopServicesID }, null)</td>
+                    </tr>
+                }
+            </table>
+
+        </div>
+    </div>
+</div>
