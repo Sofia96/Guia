@@ -37,11 +37,15 @@ namespace bsi24tallerbilly.Controllers
         [HttpPost]
         public ActionResult Add(AddWorkshopServiceViewModel model)
         {
-            workshopServicesRepository.Add(model);
-            return RedirectToAction("List");
+            if (ModelState.IsValid)
+            {
+                workshopServicesRepository.Add(model);
+                return RedirectToAction("List");
+            }
+            return View(model);
         }
 
-        public ActionResult Update (int id)
+        public ActionResult Update(int id)
         {
             return View("Add", workshopServicesRepository.GetByID(id));
         }

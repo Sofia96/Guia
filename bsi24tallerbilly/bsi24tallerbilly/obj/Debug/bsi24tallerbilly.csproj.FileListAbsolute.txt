@@ -71,3 +71,4 @@ C:\Users\sergi\source\Github\BillyWorkshop\bsi24tallerbilly\bsi24tallerbilly\obj
 C:\Users\sergi\source\Github\BillyWorkshop\bsi24tallerbilly\bsi24tallerbilly\obj\Debug\bsi24tallerbilly.csprojResolveAssemblyReference.cache
 C:\Users\sergi\source\Github\BillyWorkshop\bsi24tallerbilly\bsi24tallerbilly\obj\Debug\bsi24tallerbilly.Migrations.Removestate.resources
 C:\Users\sergi\source\Github\BillyWorkshop\bsi24tallerbilly\bsi24tallerbilly\obj\Debug\bsi24tallerbilly.csproj.GenerateResource.Cache
+C:\Users\sergi\source\Github\BillyWorkshop\bsi24tallerbilly\bsi24tallerbilly\obj\Debug\bsi24tallerbilly.csproj.CopyComplete
