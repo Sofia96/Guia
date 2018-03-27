@@ -1,6 +1,7 @@
 ﻿using System.Data.Entity;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using bsi24tallerbilly.Data.Entities;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 
@@ -27,7 +28,11 @@ namespace bsi24tallerbilly.Models
         public ApplicationDbContext()
             : base("LocalConnection", throwIfV1Schema: false)
         {
+            
         }
+
+        //Add all entities like this
+        public DbSet <WorkshopServices> WorkshopServices { get; set;}
 
         public static ApplicationDbContext Create()
         {
