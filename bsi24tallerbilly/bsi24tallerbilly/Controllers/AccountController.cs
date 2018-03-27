@@ -12,6 +12,8 @@ using bsi24tallerbilly.Models;
 
 namespace bsi24tallerbilly.Controllers
 {
+    //TEST
+
     [Authorize]
     public class AccountController : Controller
     {
@@ -20,6 +22,7 @@ namespace bsi24tallerbilly.Controllers
 
         public AccountController()
         {
+            
         }
 
         public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager )
@@ -72,7 +75,7 @@ namespace bsi24tallerbilly.Controllers
             {
                 return View(model);
             }
-
+            
             // This doesn't count login failures towards account lockout
             // To enable password failures to trigger account lockout, change to shouldLockout: true
             var result = await SignInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, shouldLockout: false);

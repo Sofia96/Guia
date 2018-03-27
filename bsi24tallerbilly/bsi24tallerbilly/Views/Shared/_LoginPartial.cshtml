@@ -15,8 +15,11 @@
 }
 else
 {
-    <ul class="nav navbar-nav navbar-right">
-        <li>@Html.ActionLink("Ingresar", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink", @class = "navbar-link login", @role = "button" })</li>
-        <li>@Html.ActionLink("Quiero registrarme", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink", @class = "btn btn-default action-button" })</li>
-    </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+            <li>@Html.ActionLink("Quiero registrarme", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink", @class = "navbar-link login" })</li>
+            <li>@Html.ActionLink("Ingresar", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink", @class = "btn btn-default action-button", @role = "button" })</li>
+            <li><a class="nav-links"><span class="disabled" style="color:ghostwhite">@Session["Username"].ToString()</span></a></li>
+        </ul>
+
 }

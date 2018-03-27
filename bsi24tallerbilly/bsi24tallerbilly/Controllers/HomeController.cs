@@ -10,6 +10,34 @@ namespace bsi24tallerbilly.Controllers
     {
         public ActionResult Index()
         {
+            try
+            {
+                //var userDetails = db.Users.Single(x => x.idUser == userModel.idUser && x.pass == userModel.pass);
+
+                Session["Username"] = "Usuario anónimo";
+                //Session["idUser"] = string.Join("", userDetails.idUser.ToString());
+                //Session["name"] = userDetails.Personas.nombre;
+                //Session["idPersona"] = userDetails.idPersona;
+
+
+                //if (userModel.idUser == "Admin" || userModel.idUser == "admin")
+                //{
+                //    Session["Admin"] = 0;
+                //    return RedirectToAction("Index", "Home");
+                //}
+                //else
+                //{
+                //    Session["Admin"] = 1;
+                //    return RedirectToAction("Index", "Jueceos");
+
+                //}
+
+
+            }
+            catch (InvalidOperationException e)
+            {
+                ModelState.AddModelError("", "Nombre de usuario o contraseña incorrecta" + " " + e);
+            }
             return View();
         }
 
