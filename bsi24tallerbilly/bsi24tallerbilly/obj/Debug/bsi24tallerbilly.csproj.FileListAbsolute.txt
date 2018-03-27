@@ -68,7 +68,6 @@ C:\Users\sergi\source\Github\BillyWorkshop\bsi24tallerbilly\bsi24tallerbilly\bin
 C:\Users\sergi\source\Github\BillyWorkshop\bsi24tallerbilly\bsi24tallerbilly\obj\Debug\bsi24tallerbilly.csproj.CoreCompileInputs.cache
 C:\Users\sergi\source\Github\BillyWorkshop\bsi24tallerbilly\bsi24tallerbilly\obj\Debug\bsi24tallerbilly.dll
 C:\Users\sergi\source\Github\BillyWorkshop\bsi24tallerbilly\bsi24tallerbilly\obj\Debug\bsi24tallerbilly.pdb
-
 C:\Users\Administrator\Source\Repos\bsi24tallerbilly\bsi24tallerbilly\bsi24tallerbilly\bin\ApplicationInsights.config
 C:\Users\Administrator\Source\Repos\bsi24tallerbilly\bsi24tallerbilly\bsi24tallerbilly\bin\bsi24tallerbilly.dll.config
 C:\Users\Administrator\Source\Repos\bsi24tallerbilly\bsi24tallerbilly\bsi24tallerbilly\bin\bsi24tallerbilly.dll
@@ -140,4 +139,7 @@ C:\Users\Administrator\Source\Repos\bsi24tallerbilly\bsi24tallerbilly\bsi24talle
 C:\Users\Administrator\Source\Repos\bsi24tallerbilly\bsi24tallerbilly\bsi24tallerbilly\obj\Debug\bsi24tallerbilly.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Source\Repos\bsi24tallerbilly\bsi24tallerbilly\bsi24tallerbilly\obj\Debug\bsi24tallerbilly.dll
 C:\Users\Administrator\Source\Repos\bsi24tallerbilly\bsi24tallerbilly\bsi24tallerbilly\obj\Debug\bsi24tallerbilly.pdb
-
+C:\Users\sergi\source\Github\BillyWorkshop\bsi24tallerbilly\bsi24tallerbilly\obj\Debug\bsi24tallerbilly.csprojResolveAssemblyReference.cache
+C:\Users\sergi\source\Github\BillyWorkshop\bsi24tallerbilly\bsi24tallerbilly\obj\Debug\bsi24tallerbilly.Migrations.Removestate.resources
+C:\Users\sergi\source\Github\BillyWorkshop\bsi24tallerbilly\bsi24tallerbilly\obj\Debug\bsi24tallerbilly.csproj.GenerateResource.cache
+C:\Users\sergi\source\Github\BillyWorkshop\bsi24tallerbilly\bsi24tallerbilly\obj\Debug\bsi24tallerbilly.csproj.CopyComplete
